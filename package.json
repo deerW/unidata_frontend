@@ -15,7 +15,7 @@
     "deploy:prod": "npm run build:prod && rsync -avr dist/. deploy@192.168.10.44:/home/deploy/production/zeus/."
   },
   "dependencies": {
-    "axios": "0.17.1",
+    "axios": "0.18.1",
     "chalk": "^2.3.0",
     "clipboard": "^2.0.1",
     "element-ui": "2.4.1",
