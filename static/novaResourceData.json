@@ -1,0 +1,114 @@
+{
+  "resourceData": [
+    {
+      "name": "标品",
+      "values": [
+        {
+          "btnText": "土耳其",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&tab=5safab&coord=F27%24F27%240%240%240%240"
+        },
+        {
+          "btnText": "奥匈捷",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&coord=A4%24A4%240%240%240%240&tab=bl791h"
+        },
+        {
+          "btnText": "西葡",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&coord=C12%24C12%240%240%240%240&tab=8ygnkk"
+        },
+        {
+          "btnText": "英国",
+          "btnType": "PARENTCHILD",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&coord=A1%24A1%240%240%240%240&tab=19yuo2"
+        },
+        {
+          "btnText": "法意瑞",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?coord=A1A0A0&tab=y7wzzd"
+        },
+        {
+          "btnText": "北欧极光",
+          "btnType": "WINTER",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?coord=A1A0A0&tab=adxau6"
+        },
+        {
+          "btnText": "松赞",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?tab=nht5kk&coord=G37A0A0"
+        }
+      ]
+    },
+    {
+      "name": "标品",
+      "values": [
+        {
+          "btnText": "日本(东京+X系列)",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&coord=K10%24K10%240%240%240%240&tab=t807xc"
+        },
+        {
+          "btnText": "阿联酋",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&coord=A1%24A1%240%240%240%240&tab=sw2i6t"
+        },
+        {
+          "btnText": "新加坡",
+          "btnType": "PARENTCHILD",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&coord=C2%24C2%240%240%240%240&tab=hfux3m"
+        },
+        {
+          "btnText": "海岛类标品",
+          "btnType": "WINTER",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&coord=A1%24A1%240%240%240%240&tab=BB08J2"
+        },
+        {
+          "btnText": "新西兰",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?coord=A1A0A0&tab=7wwy3y"
+        },
+        {
+          "btnText": "北海道滑雪",
+          "btnType": "SKIING",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?tab=rex7cm&coord=G15A0A0"
+        },
+        {
+          "btnText": "澳大利亚-凯恩斯布里斯班",
+          "btnType": "default",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?opendocxfrom=admin&tab=gpw9cm&coord=K10%24K10%240%240%240%240"
+        },
+        {
+          "btnText": "悉尼墨尔本亲子",
+          "btnType": "WINTER",
+          "btnSrc": "https://docs.qq.com/sheet/DQmlIQ0RtWWFlRGdj?tab=g5ab28&coord=H17A0A0"
+        }
+      ]
+    },
+    {
+      "name": "招募团",
+      "values": [
+        {
+          "btnText": "摩洛哥招募团",
+          "btnType": "GROUP",
+          "btnSrc": "https://docs.qq.com/sheet/DS0lWWXNzbEF6QVZx?opendocxfrom=admin&tab=5f5j5g&coord=J17%24J17%240%240%240%240"
+        },
+        {
+          "btnText": "墨西哥招募团",
+          "btnType": "GROUP",
+          "btnSrc": "https://docs.qq.com/sheet/DS0lWWXNzbEF6QVZx?opendocxfrom=admin&tab=sgd6ut&coord=A1%24A1%240%240%240%240"
+        },
+        {
+          "btnText": "纳米比亚招募团",
+          "btnType": "GROUP",
+          "btnSrc": "https://docs.qq.com/sheet/DS0lWWXNzbEF6QVZx?opendocxfrom=admin&coord=A1%24A1%240%240%240%240&tab=g55x7b"
+        },
+        {
+          "btnText": "埃及招募团",
+          "btnType": "GROUP",
+          "btnSrc": "https://docs.qq.com/sheet/DS0lWWXNzbEF6QVZx?opendocxfrom=admin&coord=A1A0A0&tab=p2q4k7"
+        }
+      ]
+    }
+  ]
+}
