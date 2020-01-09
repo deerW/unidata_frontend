@@ -219,8 +219,6 @@ export default {
         let chartData = []
         let filterChartData = []
         for (const iterator of list) {
-          console.log('iterator', iterator)
-          console.log(filterChartData.indexOf(iterator.slaveColumnId))
           if(filterChartData.indexOf(iterator.slaveColumnId) === -1) {
             chartData.push({
               tableId: iterator.slaveColumnTableId,
@@ -248,7 +246,6 @@ export default {
           })
         }
         this.chartData = chartData
-        console.log('forof', chartData)
       }).catch(err => {
         this.$message.error('获取关系配置失败')
         console.log(err)

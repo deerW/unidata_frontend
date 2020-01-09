@@ -66,7 +66,6 @@ export default {
         this.tableData = data.data
         getColumns(this.tableData.id).then(column => {
           this.tableData.column = column.data
-          console.log('aaa', this.tableData.column)
         }).catch(err => {
           this.$message.error('获取表字段信息失败')
           console.log(err)

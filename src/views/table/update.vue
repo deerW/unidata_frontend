@@ -104,8 +104,6 @@ export default {
         if (valid) {
           this.isSubmiting = true
           const tableForm = JSON.parse(JSON.stringify(this.tableForm))
-          console.log('tableForm', tableForm)
-          console.log('this.tableForm', this.tableForm)
           tableForm.moduleId = tableForm.moduleId[tableForm.moduleId.length - 1]
           updateTable(tableForm).then((res) => {
             this.updateColumns()

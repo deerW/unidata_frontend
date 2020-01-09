@@ -1,27 +1,53 @@
 <template>
   <el-card header="关系图" v-loading="divLoading" class="home-page-order-list">
     <div class="flowchart" id="flowchart">
-      <div
-        class="chart"
-        v-for="item in data"
-        :key="item.tableId"
-      >
-        <!-- :style="{ left: `calc(15 * ${index}em)`, top: `calc(${parseInt(index / 1) * 10 + 5}em)`}" -->
-        <div class="chart-title">
-          <span v-show="item.databaseName">
-            {{item.databaseName }}.
-          </span>
-          {{ item.tableName }}
-        </div>
+      <template>
         <div
-          v-for="column in item.columns"
-          :key="column.id"
-          class="chart-body"
-          :id="`column${column.id}`"
-        >
-          {{ column.name }}
+          v-for="(item, index) in data"
+          :key="item.tableId">
+          <div
+            v-if="index === 0"
+            class="chart"
+            :style="{ left: '0em', top: '25em' }"
+          >
+            <div class="chart-title">
+              <span v-show="item.databaseName">
+                {{item.databaseName }}.
+              </span>
+              {{ item.tableName }}
+            </div>
+            <div
+              v-for="column in item.columns"
+              :key="column.id"
+              class="chart-body"
+              :id="`column${column.id}`"
+            >
+              {{ column.name }}
+            </div>
+          </div>
+          <div
+            v-else
+            class="chart"
+            :style="{ left: '25em', top: `calc(${(index - 1) * 10}em)`}"
+          >
+            <div class="chart-title">
+              <span v-show="item.databaseName">
+                {{item.databaseName }}.
+              </span>
+              {{ item.tableName }}
+            </div>
+            <div
+              v-for="column in item.columns"
+              :key="column.id"
+              class="chart-body"
+              :id="`column${column.id}`"
+            >
+              {{ column.name }}
+            </div>
+          </div>
         </div>
-      </div>
+      </template>
+      
     </div>
   </el-card>
 </template>
@@ -51,7 +77,7 @@ export default {
         Endpoint: ['Dot', { radius: 3 }], // 这个是控制连线终端那个小点的半径
         EndpointStyle: { fill: '#E6A23C' }, // 这个是控制连线终端那个小点的样式
         EndpointHoverStyle: { fill : '#67C23A' }, // 这个是控制连线终端那个小点的样式
-        Connector: ['StateMachine'],
+        Connector: ['Flowchart'],
         ConnectionOverlays: [
             ['Arrow', { location: 1 }]
         ],
@@ -80,7 +106,7 @@ export default {
       const anchorArr = { 'left_join': 'Right', 'right_join': 'Left' }
       const anchoredArr = { 'left_join': 'Left', 'right_join': 'Right' }
       data.map((item, index) => {
-        item.columns.map(column => {
+        item.columns.map((column ,index) => {
           j.addEndpoint(
             'column' + column.id,
             { 
@@ -164,10 +190,10 @@ export default {
 .flowchart {
     width: 100%;
     min-height: 300px;
-    // position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    position: relative;
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
     // justify-content: center;
 }
 .flowchart .chart {
@@ -177,7 +203,7 @@ export default {
     opacity: 0.8;
     filter: alpha(opacity=80);
     text-align: center;
-    position: relative;
+    position: absolute;
     background-color: #eeeeef;
     color: black;
     font-family: helvetica;
